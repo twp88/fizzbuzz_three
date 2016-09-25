@@ -1,10 +1,14 @@
 def fizzbuzz(num)
-    if num % 3 == 0
+    if num % 3 == 0 && num % 5 != 0
         answer = 'Fizz'
-    end
     
-    if num % 5 == 0
+    
+    elsif num % 5 == 0 && num % 3 != 0
         answer = 'Buzz'
+    
+    elsif num % 5 == 0 && num % 3 == 0
+        answer = 'FizzBuzz'
+    
     end
     
     answer
